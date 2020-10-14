@@ -1,5 +1,7 @@
 #ifdef OCTOTIGER_HAVE_CUDA
 
+#include <hpx/executors/async.hpp>
+#include <hpx/include/apply.hpp>
 #include <buffer_manager.hpp>
 #include <cuda_buffer_util.hpp>
 #include "octotiger/options.hpp"
