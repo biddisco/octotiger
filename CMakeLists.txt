@@ -73,7 +73,10 @@ endif()
 # Find required packages
 ################################################################################
 find_package(HPX REQUIRED NO_CMAKE_PACKAGE_REGISTRY)
-find_package(CPPuddle REQUIRED)
+find_package(CPPuddle QUIET)
+if (NOT CPPuddle_FOUND)
+    include(Setup_Cppuddle)
+endif()
 find_package(Silo REQUIRED)
 find_package(Boost REQUIRED)
 if(NOT MSVC)
