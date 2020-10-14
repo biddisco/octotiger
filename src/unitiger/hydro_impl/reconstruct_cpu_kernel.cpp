@@ -269,7 +269,7 @@ void reconstruct_cpu_kernel(const safe_real omega, const size_t nf_, const int a
     // Current implementation limitations of this kernel - can be resolved but that takes more work
     assert(angmom_index_ > -1);
     assert(NDIM > 2);
-    assert(nf == 15);
+    assert(nf_ == 15);
     assert(geo.NDIR == 27);
     assert(INX == 8);
     // TODO Make kernel work with a wider range of parameters
